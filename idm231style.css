@@ -1,0 +1,87 @@
+body {
+    font-family: fino-sans,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 2rem;
+}
+
+.js-date-input {
+    margin-left: 0.5rem;
+}
+
+.js-submit-button {
+
+    margin-left: 2rem;
+    font-family: fino-sans,sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    width: 10rem;
+    height: 3.5rem;
+
+}
+
+
+*{box-sizing: border box;}
+
+.help-container {
+    width: 300px;
+    height: 320px;
+    background: #EEE;
+    position: absolute;
+    top: 50px; left: 50px;
+}
+
+.btn-help {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(lightgray, darkturquoise);
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 14px;
+    position: absolute;
+    top: 0; left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.help-title {
+    width: 270px;
+    height: 50px;
+    background: linear-gradient(lightgray, darkturquoise);
+    position: absolute;
+    top: 0; left: 25px;
+    border-radius: 0 25px 0 0;
+
+}
+
+.help-title h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 12px 35px
+}
+
+.help-body {
+    width: 270px;
+    height: 270px;
+    background: gray;
+    position: absolute;
+    top: 50px; left: 25px;
+    text-align: justify;
+    border-radius: 0 0 25px 25px;
+}
+
+.help-body p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 12px 35px;
+}
