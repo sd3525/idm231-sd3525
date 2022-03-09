@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="https://use.typekit.net/awd7jbn.css"/>
 </head>
 <body>
+    <div class="push_right">
+        <div class="popup" onclick="myHelp()">Need Help?
+            <span class="popuptext" id="myPopup">Enter first, last name, and birthday (mm/dd/yyyy) or click one of the images to see a zodiac! </span>
+        </div>
+    </div>
+
+    <div class="center_flex">
+
+        <button class="resize" id="taurus"><img src="images/industrial.png" class="resize"></button>
+        <button class="resize" id="leo"><img src="images/artdeco2.png" class="resize"></button>
+        <button class="resize" id="virgo"><img src="images/modern.png" class="resize"></button>
+        <button class="resize" id="aries"><img src="images/brutalist.png" class="resize"></button>
+        <button class="resize" id="pisces"><img src="images/gothic.png" class="resize"></button>
+        <button class="resize" id="libra"><img src="images/colonial.png" class="resize"></button>
+        <button class="resize" id="scorpio"><img src="images/romanesque.png" class="resize"></button>
+        <button class="resize" id="aquarius"><img src="images/bahaus.png" class="resize"></button>
+        <button class="resize" id="cancer"><img src="images/deconstructionist.png" class="resize"></button>
+        <button class="resize" id="sagitarius"><img src="images/postmodernism.png" class="resize"></button>
+    </div>
+
     <h1> Architecture Zodiac </h1>
     <h2>Find Out what your Architecture Style is!</h2>
         <form action="/action_page.php">
@@ -20,21 +40,6 @@
             <input id="birthdayInput" class ="js-date-input" type="date" name="birthday"><br><br>
             <button class="js-submit-button" type="button">Submit</button>
         </form>
-
-        <div class="help-container">
-            <div class="btn-help" id="btnHelp">
-                ?
-            </div>
-            <div class="help-title" id="helpTitle">
-                <h2 id="heading">Need Help</h2>
-            </div>
-        </div>
-
-        <div class="help-body" id="helpBody">
-            <p id="description">
-                Type in a valid birthday as mm/dd/yyyy or click a button and see your zodiac!
-            </p>
-        </div>
     
         <div data-content-area>
           <p date-content-area class="date"></p>
