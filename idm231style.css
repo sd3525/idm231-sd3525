@@ -1,15 +1,25 @@
 body {
     font-family: fino-sans,sans-serif;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-style: bold;
     text-align: center;
-    margin-top: 12rem;
-    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-image: url("images/reflectcement.png");
+    height: 100%;
+    width: auto; 
+
 }
 
 
 .js-date-input {
     margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 10px;
 }
 
 .js-submit-button {
@@ -17,6 +27,9 @@ body {
     margin-left: 2rem;
     font-family: fino-sans,sans-serif;
     font-weight: 400;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
@@ -25,37 +38,49 @@ body {
 
 }
 
-h2 {
-    font-size: 1.5rem;
+h1 {
+    font-size: 5rem;
 }
+
+h2 {
+    font-size: 1.75rem;
+}
+
 
 /* Popup container */
 .popup {
+    font-family: fino-sans,sans-serif;
+    font-weight: 400;
     position: relative;
     top: 0px;
+    left: 0px;
+    width: 10rem;
+    height: 2rem;
     display: inline-block;
     cursor: pointer;
-    border: 2px solid black;
-    padding: .2rem;
-    background: white;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 0.7rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
     width: 160px;
-    background-color: #555;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+    font-size: 1rem;
+    padding: 1rem;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -95px;
 }
 
 /* Popup arrow */
@@ -78,10 +103,16 @@ h2 {
 }
 
 .resize {
+    flex: auto;
     width: 10rem;
-    border-color: black;
-    border-radius: 10px;
-    margin: 10px;
+    border-color: white;
+    border-width: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 12px;
     background: none;
     cursor: pointer;
 }
