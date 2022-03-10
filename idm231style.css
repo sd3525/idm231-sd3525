@@ -2,7 +2,6 @@ body {
     font-family: fino-sans,sans-serif;
     font-weight: 600;
     color: white;
-    text-shadow: 2px 2px #000000;
     font-style: bold;
     text-align: center;
     margin-top: 1rem;
@@ -40,6 +39,9 @@ body {
 
 h1 {
     font-size: 5rem;
+    text-shadow: 2px 2px #000000;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 h2 {
