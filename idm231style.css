@@ -19,6 +19,7 @@ body {
 .js-date-input {
     margin-left: 0.5rem;
     padding-left: 0.5rem;
+    margin-bottom: 1rem;
     margin-top: 1rem;
     height: 2rem;
     border-radius: 10px;
@@ -84,7 +85,7 @@ h2 {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 50%;
+    left: 60%;
     margin-left: -95px;
 }
 
@@ -109,8 +110,7 @@ h2 {
 
 .resize {
     width: 2rem;
-    color: #dd5040;
-    justify-content: space-around;
+    color: #000000;
     padding-left: 0.5rem;
     padding-right: 10rem;
     margin-right: 3rem;
@@ -121,6 +121,7 @@ h2 {
     background: none;
     cursor: pointer;
 }
+
 
 
 /* THE MODAL */
@@ -144,7 +145,7 @@ html {
 }
 
 button {
-	background-color: #000000;
+	background-color: #858585;
     text-shadow: 0 0 6px #ffffff;
 	padding: .75rem;
 	margin: .75rem;
@@ -196,8 +197,8 @@ button:hover {
 }
 
 .modal-body {
-	background-color: #CCA831;
-	border: 1rem groove #335145;
+	background-color: #000000;
+	border: 1rem groove #ffffff;
 
 	height: 85vh;
 	max-width: 60vw;
@@ -228,10 +229,11 @@ button:hover {
 
 #zTitle {
 	font-size: 2.5rem;
-	text-shadow: 0 0 6px #FF0000;
+	text-shadow: 0 0 10px #FF0000;
 }
 
 #zDateRange {
+    color: #DC3F2E;
 	font-size: 2rem;
 	font-family: "Subway Shadow", "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
