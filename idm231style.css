@@ -12,6 +12,9 @@ body {
 
 }
 
+* {
+    box-sizing: border-box;
+}
 
 .js-date-input {
     margin-left: 0.5rem;
@@ -57,7 +60,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 10rem;
-    height: 2rem;
+    height: 3rem;
     display: inline-block;
     cursor: pointer;
     padding: 0.7rem;
@@ -105,18 +108,146 @@ h2 {
 }
 
 .resize {
-    flex: auto;
-    width: 10rem;
-    border-color: white;
-    border-width: 5px;
+    width: 2rem;
+    color: #dd5040;
+    justify-content: space-around;
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 10rem;
     margin-right: 3rem;
+    margin-left: -3rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
-    border-radius: 12px;
+    border-radius: 0.8rem;
     background: none;
     cursor: pointer;
+}
+
+
+/* THE MODAL */
+
+/* Modal Content */
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Hidden Controls */
+[hidden] {
+	display: none !important;
+}
+
+button {
+	background-color: #000000;
+    text-shadow: 0 0 6px #ffffff;
+	padding: .75rem;
+	margin: .75rem;
+	border-radius: 0;
+	border: 0;
+	font-family: "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: background-color 225ms ease-in-out;
+	transition: color 225ms ease-in-out;
+	border-radius: 20px;
+}
+
+button:hover,
+button:focus {
+	background-color: #DC3F2E;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+}
+.modal {
+	height: 100vh;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.modal .blanket {
+	background-color: rgba(0, 0, 0, .8);
+
+	height: 100vh;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.modal-body {
+	background-color: #CCA831;
+	border: 1rem groove #335145;
+
+	height: 85vh;
+	max-width: 60vw;
+
+	position: relative;
+	z-index: 101;
+
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+
+	border-radius: 50px;
+
+}
+
+/* Modal Content Styling */
+
+#zDisplayImg {
+	max-height: 14rem;
+	margin-top: 1rem;
+}
+
+#zTitle {
+	font-size: 2.5rem;
+	text-shadow: 0 0 6px #FF0000;
+}
+
+#zDateRange {
+	font-size: 2rem;
+	font-family: "Subway Shadow", "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#zMoreInfo {
+	font-size: 1rem;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+h1.title {
+	font-family: "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 3.5rem;
+	text-align: center;
+	margin-top: 1rem;
+	text-shadow: 5px 5px #E46F62;
 }
 
 
