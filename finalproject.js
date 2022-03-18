@@ -41,100 +41,102 @@ const postmodernismBtn= document.getElementById('postmodernism');
 
 contemporaryBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Cap";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Cap";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 bauhausBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Aqu";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Aqu";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 gothicBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Pis";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Pis";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 brutalistBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Ari";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Ari";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 industrialBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Tau";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Tau";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 puebloBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Gem";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Gem";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 deconstructionistBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Can";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Can";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 artdeco2Btn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Leo";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Leo";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 modernBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Vir";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Vir";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 colonialBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Lib";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Lib";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 romanesqueBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Sco";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Sco";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 //
 postmodernismBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
-  let AstroSign = "Sag";
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  let Sign = "Sag";
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 
 
-// Calendar Input Code
+// Calendar Code
 
 const userSubmitObj = document.getElementById('userSubmit');
 
 userSubmitObj.addEventListener('click', function () {
   console.log('user submit button clicked');
 
-  // Get the user's date and extract the month of year and day of month
+  // Get the user's date extract the month of year and day of month
+
   const userBday = new Date(document.getElementById('birthday').value);
 
   // Figure out the zodiac sign based on month of year and day of month
+
   let whichMonth = userBday.getUTCMonth();
   whichMonth++;
   console.log('whichMonth is: ' + whichMonth);
@@ -142,6 +144,7 @@ userSubmitObj.addEventListener('click', function () {
   console.log('whichDayOfMonth is: ' + whichDayOfMonth);
 
   // Display custom image based on zodiac sign
+
   let AstroSign = "";
 
   if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
@@ -170,8 +173,8 @@ userSubmitObj.addEventListener('click', function () {
     AstroSign = "Aqu";
   }
 
-  console.log('AstroSign is: ' + AstroSign);
-  userPicked(AstroSign);
+  console.log('Sign is: ' + Sign);
+  userPicked(Sign);
 });
 
 
