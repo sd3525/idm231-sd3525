@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final 231</title>
+    <link rel="stylesheet" href="idm231style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/awd7jbn.css"/>
+</head>
+<body>
+
+    
+    <!-- <div class="manualchoiceObj"></div> -->
+    <div class="center_flexObj"> 
+        <div class="manualchoice"> 
+        <!-- capricorn -->
+        <button class="resize one" id="contemporary" data-audio-file="priceding.mp3"> <img src="images/contemporary.png">capricorn</button>
+       <!-- aquarius -->
+       <button class="resize two" id="bauhaus" data-audio-file="windowsding.mp3"> <img src="images/bauhaus.png">aquarius</button>
+        <!-- pisces -->
+        <button class="resize three" id="gothic" data-audio-file="ding5.mp3"> <img src="images/gothic.png">pisces</button>
+       <!-- aries -->
+        <button class="resize four" id="brutalist" data-audio-file="seatbelt.mp3"> <img src="images/brutalist.png">aries</button>
+         <!-- taurus -->
+         <button class="resize five" id="industrial" data-audio-file="ding4.mp3"> <img src="images/industrial.png">taurus</button>
+          <!-- gemini -->
+          <button class="resize six" id="pueblo" data-audio-file="taco.mp3"> <img src="images/pueblo.png"> gemini</button>
+        </div>
+        </div>
+
+            <div class="push_right">
+        <div class="popup" onclick="myHelp()">Need Help?
+            <span class="popuptext" id="myPopup">Enter your birthday (mm/dd/yyyy) or click one of the images to see a zodiac! </span>
+        </div>
+    </div>
+
+  
+    <h1> Architecture Zodiac </h1>
+    <h2>What Architecture Style are you?</h2>
+        <form action="/action_page.php">
+            <label for="birthdayInput">Birthday:</label>
+            <input id="birthday" type="date" name="birthday" required>
+            <button class="js-submit-button" type="button" id="userSubmit">Submit</button>
+        </form>
+    
+        <div data-content-area>
+          <p date-content-area class="date"></p>
+        </div>
+
+
+
+        <div class="center_flex">
+            <!-- cancer -->
+            <button class="resize seven" id="deconstructionist" data-audio-file="ding3.mp3"> <img src="images/deconstructionist.png">cancer</button>
+            <!-- leo -->
+            <button class="resize eight" id="artdeco2" data-audio-file="vibrate.mp3"> <img src="images/artdeco2.png">leo</button> 
+            <!-- virgo -->
+            <button class="resize nine" id="modern" data-audio-file="dingsing.mp3"> <img src="images/modern.png">virgo</button>
+            <!-- libra -->
+            <button class="resize ten" id="colonial" data-audio-file="doording.mp3"> <img src="images/colonial.png">libra</button>
+            <!-- scorpio -->
+            <button class="resize eleven" id="romanesque" data-audio-file="ding2.mp3"> <img src="images/romanesque.png">scorpio</button>
+        <!-- sagitarius -->
+            <button class="resize twelve" id="postmodernism" data-audio-file="fbmessenger.mp3"> <img src="images/postmodernism.png">sagitarius</button>
+        </div>
+        
+            <audio id="speakers"></audio>
+
+        <!-- Modal (modal is initially hidden)-->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-body">
+      <div class="modal-content">
+        <div>
+          <img id="zDisplayImg" src="images/contemporary.png" alt="blank">
+        </div>
+        <p class="titleAndDate">
+          <span id="zTitle">Title</span> <br> <span id="zDateRange">Date Range</span>
+        </p>
+        <div id="zMoreInfo">
+          <p>Architectural style description</p>
+        </div>
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
+      </div>
+    </div>
+    <div class="blanket"></div>
+  </div>
+        <script src="finalproject.js"></script>
+
+</body>
+</html>
