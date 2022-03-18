@@ -10,7 +10,10 @@
 </head>
 <body>
 
-    <div class="center_flex">
+    
+    <!-- <div class="manualchoiceObj"></div> -->
+    <div class="center_flexObj"> 
+        <div class="manualchoice"> 
         <!-- capricorn -->
         <button class="resize one" id="contemporary" data-audio-file="priceding.mp3"> <img src="images/contemporary.png">capricorn</button>
        <!-- aquarius -->
@@ -24,6 +27,7 @@
           <!-- gemini -->
           <button class="resize six" id="pueblo" data-audio-file="taco.mp3"> <img src="images/pueblo.png"> gemini</button>
         </div>
+        </div>
 
             <div class="push_right">
         <div class="popup" onclick="myHelp()">Need Help?
@@ -31,17 +35,22 @@
         </div>
     </div>
 
+  
     <h1> Architecture Zodiac </h1>
     <h2>What Architecture Style are you?</h2>
         <form action="/action_page.php">
             <label for="birthdayInput">Birthday:</label>
-            <input id="birthdayInput" type="date" name="birthday" required>
+            <input id="birthday" type="date" name="birthday" required>
             <button class="js-submit-button" type="button" id="userSubmit">Submit</button>
         </form>
     
         <div data-content-area>
           <p date-content-area class="date"></p>
         </div>
+
+        
+            
+            
 
         <div class="center_flex">
             <!-- cancer -->
