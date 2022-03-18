@@ -23,7 +23,7 @@ soundButtons.forEach(function (individualButtonElement) {
 // Button Declares
 
 const contemporaryBtn = document.getElementById('contemporary');
-const bahausBtn = document.getElementById('bahaus');
+const bauhausBtn = document.getElementById('bauhaus');
 const gothicBtn = document.getElementById('gothic');
 const brutalistBtn = document.getElementById('brutalist');
 const industrialBtn = document.getElementById('industrial');
@@ -46,7 +46,7 @@ contemporaryBtn.addEventListener('click', function () {
   userPicked(AstroSign);
 });
 //
-bahausBtn.addEventListener('click', function () {
+bauhausBtn.addEventListener('click', function () {
   console.log('User submit button clicked');
   let AstroSign = "Aqu";
   console.log('AstroSign is: ' + AstroSign);
@@ -196,12 +196,12 @@ function userPicked(whichOne) {
       playSoundFile(soundFile);
       break;
     case 'Aqu':
-      zDisplayObj.src = "images/bahaus.png";
-      zTitleObj.innerHTML = 'BAHAUS';
+      zDisplayObj.src = "images/bauhaus.png";
+      zTitleObj.innerHTML = 'BAUHAUS';
       zDateRangeObj.innerHTML = 'January 20th to February 18th';
-      zMoreInfoObj.innerHTML = '<p>Ok&comma; so you know what&comma; I&apos;m just gonna go with the obvious joke&colon; You know when to lay off the salt. You&apos;re not salty. Get it&quest; Because of the less salt. No gossip or pettiness for you- you&apos;re Lightly Salted Potato Chip Flavor baby&comma; and there&apos;s no telling how much blood pressure you&apos;ll lower out there.</p>'
+      zMoreInfoObj.innerHTML = '<p>You are fun, thrive in group settings, and like to consider yourself weird, but are still rational. Bauhaus is right up your alley with its use of abstract shapes, primary color scheme, and its inclusion of basic industrial materials.</p>'
       modal.hidden = !modal.hidden;
-      soundFile = bahausBtn.getAttribute("data-audio-file");
+      soundFile = bauhausBtn.getAttribute("data-audio-file");
       playSoundFile(soundFile);
       break;
     case 'Pis':
